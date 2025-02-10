@@ -32,7 +32,7 @@
           android:paddingRight="@dimen/activity_horizontal_margin"
           tools:context="com.hmdm.launcher.ui.MainActivity">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@id/hint"
             android:layout_width="@dimen/dialog_enter_device_id_width"
             android:layout_height="wrap_content"
@@ -46,7 +46,7 @@
             android:layout_marginTop="@dimen/activity_horizontal_margin"
             android:orientation="horizontal">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -55,7 +55,7 @@
                 android:textSize="@dimen/button_text_size"
                 android:onClick="skipAccessibilityService"/>
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"

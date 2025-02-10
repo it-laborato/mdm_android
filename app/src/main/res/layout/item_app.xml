@@ -28,14 +28,14 @@
     android:id="@+id/root_linearLayout"
     android:layout_margin="5dp">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:layout_width="@dimen/app_icon_size"
         android:layout_height="@dimen/app_icon_size"
         android:layout_marginTop="16dp"
         android:id="@+id/imageView"
         tools:ignore="ContentDescription" />
 
-    <TextView
+    <com.google.android.material.textview.MaterialTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"

@@ -1657,10 +1657,10 @@ public class MainActivity
             } catch (Exception e) {
                 // Invalid color
                 e.printStackTrace();
-                binding.activityMainContentWrapper.setBackgroundColor( getResources().getColor(R.color.defaultBackground));
+                binding.activityMainContentWrapper.setBackgroundColor( getResources().getColor(R.color.md_theme_background));
             }
         } else {
-            binding.activityMainContentWrapper.setBackgroundColor( getResources().getColor(R.color.defaultBackground));
+            binding.activityMainContentWrapper.setBackgroundColor( getResources().getColor(R.color.md_theme_background));
         }
         updateTitle(config);
 

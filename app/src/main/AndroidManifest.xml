@@ -152,7 +152,7 @@
 
         <activity
             android:name=".ui.InitialSetupActivity"
-            android:theme="@style/SetupWizardTheme"
+            android:theme="@style/AppTheme"
             android:permission="android.permission.BIND_DEVICE_ADMIN"
             android:exported="true">
             <intent-filter>
@@ -163,7 +163,7 @@
 
         <activity
             android:name=".ui.MdmChoiceSetupActivity"
-            android:theme="@style/SetupWizardTheme"
+            android:theme="@style/AppTheme"
             android:permission="android.permission.BIND_DEVICE_ADMIN"
             android:exported="true">
             <intent-filter>
@@ -174,7 +174,7 @@
 
         <activity
             android:name=".ui.ErrorDetailsActivity"
-            android:theme="@style/SetupWizardTheme" 
+            android:theme="@style/AppTheme"
             android:exported="false"/>
 
         <receiver

@@ -42,7 +42,7 @@
           android:paddingRight="@dimen/activity_horizontal_margin"
           tools:context="com.hmdm.launcher.ui.MainActivity">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_width="@dimen/device_info_width"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
@@ -56,14 +56,14 @@
             android:orientation="horizontal"
             android:layout_marginBottom="8dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="@dimen/device_info_column_width"
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:text="@string/device_id"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -78,14 +78,14 @@
             android:orientation="horizontal"
             android:layout_marginBottom="8dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="@dimen/device_info_column_width"
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:text="@string/imei"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -100,14 +100,14 @@
             android:orientation="horizontal"
             android:layout_marginBottom="8dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="@dimen/device_info_column_width"
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:text="@string/serial_number"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -122,14 +122,14 @@
             android:orientation="horizontal"
             android:layout_marginBottom="8dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="@dimen/device_info_column_width"
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:text="@string/phone_number"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -144,14 +144,14 @@
             android:orientation="horizontal"
             android:layout_marginBottom="16dp">
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="@dimen/device_info_column_width"
                 android:layout_height="wrap_content"
                 android:gravity="right"
                 android:paddingRight="@dimen/activity_horizontal_margin"
                 android:text="@string/launcher_version"/>
 
-            <TextView
+            <com.google.android.material.textview.MaterialTextView
                 android:layout_width="0dp"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -160,7 +160,7 @@
 
         </LinearLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/close"

@@ -32,16 +32,22 @@
         android:layout_height="match_parent"
         tools:context="com.hmdm.launcher.ui.ErrorDetailsActivity">
 
-        <EditText
-            android:id="@+id/editMessage"
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="0px"
             android:layout_weight="1"
-            android:editable="false"
-            android:inputType="none"
-            android:textIsSelectable="true"
             android:layout_margin="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin"/>
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editMessage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false"
+                android:inputType="none"
+                android:textIsSelectable="true" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -51,31 +57,25 @@
                 android:layout_margin="@dimen/activity_horizontal_margin"
                 android:orientation="horizontal">
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/resetButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/main_activity_reset"
                     android:layout_margin="@dimen/activity_vertical_margin"
-                    android:background="@color/wizardPrimary"
-                    android:textColor="@color/white"
                     android:onClick="resetClicked"
                     android:paddingLeft="@dimen/activity_horizontal_margin"
-                    android:paddingRight="@dimen/activity_horizontal_margin"
-                    ></Button>
+                    android:paddingRight="@dimen/activity_horizontal_margin" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:id="@+id/closeButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/close"
                     android:layout_margin="@dimen/activity_vertical_margin"
-                    android:background="@color/wizardPrimary"
-                    android:textColor="@color/white"
                     android:onClick="closeClicked"
                     android:paddingLeft="@dimen/activity_horizontal_margin"
-                    android:paddingRight="@dimen/activity_horizontal_margin"
-                    ></Button>
+                    android:paddingRight="@dimen/activity_horizontal_margin" />
 
             </LinearLayout>
 

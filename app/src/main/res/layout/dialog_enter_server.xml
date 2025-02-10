@@ -39,28 +39,33 @@
           android:paddingRight="@dimen/activity_horizontal_margin"
           tools:context="com.hmdm.launcher.ui.MainActivity">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_width="@dimen/dialog_enter_device_id_width"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             bind:boolToVisible="@{error}"
             android:text="@string/dialog_enter_server_error"/>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:layout_width="@dimen/dialog_enter_device_id_width"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
             bind:boolToVisible="@{!error}"
             android:text="@string/dialog_enter_server_title"/>
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/server_url"
             android:hint="@string/dialog_enter_server_hint"
-            android:text="@{server}"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:layout_marginBottom="@dimen/activity_vertical_margin"/>
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/server_url"
+                android:text="@{server}"/>
+        </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -69,7 +74,7 @@
         android:gravity="center_horizontal"
         >
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/showDeviceIdQrCode"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -78,7 +83,7 @@
             android:text="@string/dialog_enter_device_id_qrcode"
             android:onClick="showDeviceIdQrCode"/>
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/saveServerUrl"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

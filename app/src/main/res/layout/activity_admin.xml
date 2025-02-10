@@ -30,7 +30,7 @@
         tools:context="com.hmdm.launcher.ui.AdminActivity"
         android:gravity="center_horizontal">
 
-        <androidx.appcompat.widget.Toolbar
+        <com.google.android.material.appbar.MaterialToolbar
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:title="@string/admin_title"
@@ -47,17 +47,16 @@
                 android:orientation="vertical"
                 >
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/deviceId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/white"
             android:textSize="20dp"
             android:gravity="center_horizontal"
             android:layout_marginTop="@dimen/activity_vertical_margin"
             />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_horizontal_margin"
@@ -66,7 +65,7 @@
             android:text="@string/admin_allow_settings"
             android:onClick="allowSettings"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -74,7 +73,7 @@
             android:text="@string/admin_clear_restrictions"
             android:onClick="clearRestrictions"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -82,7 +81,7 @@
             android:text="@string/admin_change_device_id"
             android:onClick="changeDeviceId"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -90,7 +89,7 @@
             android:text="@string/admin_change_server_url"
             android:onClick="changeServerUrl"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:visibility="gone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -99,7 +98,7 @@
             android:text="@string/admin_refresh"
             android:onClick="updateConfig"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/systemLauncherButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -108,7 +107,7 @@
             android:text="@string/admin_exit"
             android:onClick="exitToSystemLauncher"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/resetPermissionsButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -117,7 +116,7 @@
             android:text="@string/admin_reset_permissions"
             android:onClick="resetPermissions"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/resetNetworkButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -126,7 +125,7 @@
             android:text="@string/admin_reset_network"
             android:onClick="resetNetworkPolicy"/>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/rebootButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

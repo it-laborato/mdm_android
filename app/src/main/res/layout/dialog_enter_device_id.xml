@@ -38,7 +38,7 @@
           android:paddingRight="@dimen/activity_horizontal_margin"
           tools:context="com.hmdm.launcher.ui.MainActivity">
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/deviceIdError"
             android:layout_width="@dimen/dialog_enter_device_id_width"
             android:layout_height="wrap_content"
@@ -46,17 +46,16 @@
             bind:boolToVisible="@{error}"
             android:text="@string/dialog_enter_device_id_error"/>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/deviceIdErrorDetails"
             android:layout_width="@dimen/dialog_enter_device_id_width"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:textColor="@color/colorAccent"
             bind:boolToVisible="@{error}"
             android:text="@string/main_activity_details"
             android:onClick="showErrorDetails"/>
 
-        <TextView
+        <com.google.android.material.textview.MaterialTextView
             android:id="@+id/deviceIdPrompt"
             android:layout_width="@dimen/dialog_enter_device_id_width"
             android:gravity="center_horizontal"
@@ -64,7 +63,7 @@
             bind:boolToVisible="@{!error}"
             android:text="@string/dialog_enter_device_id_title"/>
 
-        <AutoCompleteTextView
+        <com.google.android.material.textfield.MaterialAutoCompleteTextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/device_id"
@@ -77,7 +76,7 @@
             android:orientation="horizontal"
             android:gravity="center_horizontal"
             >
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/showDeviceIdQrCode"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -85,7 +84,7 @@
                 android:textSize="@dimen/button_text_size_small"
                 android:text="@string/dialog_enter_device_id_qrcode"
                 android:onClick="showDeviceIdQrCode"/>
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/showDeviceIdVariants"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -93,7 +92,7 @@
                 android:textSize="@dimen/button_text_size_small"
                 android:text="@string/dialog_enter_device_id_variants"
                 android:onClick="showDeviceIdVariants"/>
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/saveDeviceId"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -101,7 +100,7 @@
                 android:textSize="@dimen/button_text_size_small"
                 android:text="@string/dialog_enter_device_id_save"
                 android:onClick="saveDeviceId"/>
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/exitDeviceId"
                 bind:boolToVisible="@{error}"
                 android:layout_width="wrap_content"

@@ -33,7 +33,7 @@ android {
     compileSdkVersion 34
     defaultConfig {
         applicationId "com.hmdm.launcher"
-        minSdkVersion 16
+        minSdkVersion 19
         targetSdkVersion 34
         versionCode 15140
         versionName "6.14"
@@ -139,14 +139,13 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     testImplementation 'junit:junit:4.12'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
     implementation 'androidx.localbroadcastmanager:localbroadcastmanager:1.0.0'
+    implementation 'com.google.android.material:material:1.12.0'
 
     // MQTT messaging
     implementation 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.2.0'
