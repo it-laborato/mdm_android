@@ -56,11 +56,6 @@ public class Utils {
         return dpm != null && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP && dpm.isDeviceOwnerApp(context.getPackageName());
     }
 
-    // In the open source variant, there are no flavors, so by default it's "opensource"
-    public static String getLauncherVariant() {
-        return BuildConfig.FLAVOR == null || BuildConfig.FLAVOR.equals("") ? "opensource" : BuildConfig.FLAVOR;
-    }
-
     // Automatically grant permission to get phone state (for IMEI and serial)
     @TargetApi(Build.VERSION_CODES.M)
     public static boolean autoGrantPhonePermission(Context context) {

@@ -148,7 +148,6 @@ public class DeviceInfoProvider {
         deviceInfo.setLocation(getLocation(context));
         deviceInfo.setMdmMode(Utils.isDeviceOwner(context));
         deviceInfo.setKioskMode(ProUtils.isKioskModeRunning(context));
-        deviceInfo.setLauncherType(Utils.getLauncherVariant());
         deviceInfo.setCpu(Build.CPU_ABI);
         deviceInfo.setSerial(getSerialNumber());
 

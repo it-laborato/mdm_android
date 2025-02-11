@@ -359,7 +359,7 @@ public class BaseActivity extends AppCompatActivity {
         dialogDeviceInfoBinding.setImei(imei);
 
         dialogDeviceInfoBinding.setDeviceId(SettingsHelper.getInstance(this).getDeviceId());
-        dialogDeviceInfoBinding.setVersion(BuildConfig.VERSION_NAME + "-" + Utils.getLauncherVariant());
+        dialogDeviceInfoBinding.setVersion(BuildConfig.VERSION_NAME);
 
         String serverPath = SettingsHelper.getInstance(this).getServerProject();
         if (serverPath.length() > 0) {
