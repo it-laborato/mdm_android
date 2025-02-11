@@ -25,10 +25,10 @@
             android:layout_width="@dimen/dialog_enter_device_id_width"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
+            android:textColor="@color/md_theme_accent"
             android:text="@string/main_activity_details"
             android:layout_marginBottom="@dimen/activity_vertical_margin"
-            android:onClick="networkErrorDetailsClicked"
-            />
+            android:onClick="networkErrorDetailsClicked" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -44,7 +44,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/main_activity_repeat"
-                android:onClick="networkErrorRepeatClicked"/>
+                android:onClick="networkErrorRepeatClicked"
+                style="@style/Widget.LabMDM.Button"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/resetButton"
@@ -52,7 +53,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/main_activity_reset"
-                android:onClick="networkErrorResetClicked"/>
+                android:layout_marginHorizontal="4dp"
+                android:onClick="networkErrorResetClicked"
+                style="@style/Widget.LabMDM.Button"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/wifiButton"
@@ -60,7 +63,9 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/main_activity_wifi"
-                android:onClick="networkErrorWifiClicked"/>
+                android:layout_marginHorizontal="4dp"
+                android:onClick="networkErrorWifiClicked"
+                style="@style/Widget.LabMDM.Button"/>
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/cancelButton"
@@ -68,7 +73,8 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/main_activity_cancel"
-                android:onClick="networkErrorCancelClicked"/>
+                android:onClick="networkErrorCancelClicked"
+                style="@style/Widget.LabMDM.Button"/>
 
         </LinearLayout>
 

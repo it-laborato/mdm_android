@@ -1,4 +1,6 @@
 <resources>
+    <color name="md_theme_accent">#87d3e1</color>
+
     <color name="md_theme_primary">#5A5892</color>
     <color name="md_theme_onPrimary">#FFFFFF</color>
     <color name="md_theme_primaryContainer">#E2DFFF</color>
