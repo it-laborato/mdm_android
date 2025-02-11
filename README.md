@@ -1,10 +1,4 @@
-# Headwind MDM: free and open-source MDM launcher
-
-A Powerful Open Source Platform to Manage your Enterprise Android Devices
-
-[<img src="https://fdroid.gitlab.io/artwork/badge/get-it-on.png"
-     alt="Get it on F-Droid"
-     height="80">](https://f-droid.org/packages/com.hmdm.launcher/)
+# Laborato MDM / MDM-Labs
 
 ## Starting work
 
@@ -22,7 +16,7 @@ Open the project directory in Android Studio (use default settings).
 
     Run the command in the adb console
    
-    `dpm set-device-owner com.hmdm.launcher/.AdminReceiver`
+    `dpm set-device-owner org.laborato.mdmlab.launcher/.AdminReceiver`
 
 ## Building the APK
 

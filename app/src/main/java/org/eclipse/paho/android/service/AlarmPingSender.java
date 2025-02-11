@@ -25,8 +25,8 @@ import android.os.PowerManager;
 import android.os.PowerManager.WakeLock;
 import android.util.Log;
 
-import com.hmdm.launcher.Const;
-import com.hmdm.launcher.util.RemoteLogger;
+import org.laborato.mdmlab.launcher.Const;
+import org.laborato.mdmlab.launcher.util.RemoteLogger;
 
 import org.eclipse.paho.client.mqttv3.IMqttActionListener;
 import org.eclipse.paho.client.mqttv3.IMqttToken;

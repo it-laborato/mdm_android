@@ -21,7 +21,7 @@ android {
     buildFeatures {
         aidl true
     }
-    namespace 'com.hmdm'
+    namespace 'org.laborato.mdmlab'
 
 }
 
