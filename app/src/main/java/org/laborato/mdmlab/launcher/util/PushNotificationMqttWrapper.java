@@ -91,8 +91,9 @@ public class PushNotificationMqttWrapper {
             connectOptions.setPingType(MqttAndroidConnectOptions.PING_ALARM);
             connectOptions.setKeepAliveInterval(keepaliveTime);
         }
-        connectOptions.setUserName("mdmlab");
-        connectOptions.setPassword(CryptoHelper.getSHA1String("mdmlab" + BuildConfig.REQUEST_SIGNATURE).toCharArray());
+        // FIXME: Migrate to mdmlab user
+        connectOptions.setUserName("hmdm");
+        connectOptions.setPassword(CryptoHelper.getSHA1String("hmdm" + BuildConfig.REQUEST_SIGNATURE).toCharArray());
         String serverUri = "tcp://" + host + ":" + port;
 
         if (client != null) {
